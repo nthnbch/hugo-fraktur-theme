@@ -43,6 +43,10 @@
   --border-radius: 12px;
   --border-radius-large: 16px;
   --border-radius-small: 8px;
+
+  /* Mobile menu compatibility variables */
+  --highlight-color: var(--primary);
+  --base-color: var(--on-primary);
 }
 
 .elevation-0 {
