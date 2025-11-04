@@ -8,3 +8,7 @@ demosite = "https://nathan.swiss"
 
 features = ["blog", "material-design", "seo", "responsive", "minimalist"]
 min_version = "0.55.0"
+
+[author]
+  name = "Nathan Buache"
+  homepage = "https://nathan.swiss"
