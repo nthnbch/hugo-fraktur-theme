@@ -1,10 +1,10 @@
-name = "Hugo White Paper"
+name = "Hugo Fraktur"
 license = "MIT"
-licenselink = "https://github.com/nthnbch/hugo-white-paper-theme/blob/main/LICENSE"
+licenselink = "https://github.com/nthnbch/hugo-fraktur-theme/blob/main/LICENSE"
 description = "A clean, modern Hugo theme featuring mixed Fraktur/Inter typography. Built for readability, elegance, and performance with no pagination or taxonomy bloat."
 
 # The home page of the theme, where the source can be found.
-homepage = "https://github.com/nthnbch/hugo-white-paper-theme"
+homepage = "https://github.com/nthnbch/hugo-fraktur-theme"
 
 # If you have a running demo of the theme.
 demosite = "https://nathan.swiss"

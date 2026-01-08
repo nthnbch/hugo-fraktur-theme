@@ -1,7 +1,7 @@
 baseURL = "https://example.com/"
 languageCode = "en-US"
-theme = "hugo-white-paper-theme"
-title = "Hugo White Paper Theme"
+theme = "hugo-fraktur-theme"
+title = "Hugo Fraktur Theme"
 
 [params]
   showIntroContentOnHomepage = true

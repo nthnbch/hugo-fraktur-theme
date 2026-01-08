@@ -1,8 +1,8 @@
-# Hugo White Paper Theme
+# Hugo Fraktur Theme
 
 A clean, modern Hugo theme featuring mixed Fraktur/Inter typography. Built for readability, elegance, and performance with no pagination or taxonomy bloat.
 
-![Hugo White Paper Theme](https://raw.githubusercontent.com/nthnbch/hugo-white-paper-theme/main/images/screenshot.png)
+![Hugo Fraktur Theme](https://raw.githubusercontent.com/nthnbch/hugo-fraktur-theme/main/images/screenshot.png)
 
 ## Features
 
@@ -25,26 +25,26 @@ Live demo: [nathan.swiss](https://nathan.swiss)
 
 ```bash
 cd your-hugo-site
-git submodule add https://github.com/nthnbch/hugo-white-paper-theme themes/hugo-white-paper-theme
+git submodule add https://github.com/nthnbch/hugo-fraktur-theme themes/hugo-fraktur-theme
 ```
 
 ### Method 2: Clone
 
 ```bash
 cd your-hugo-site
-git clone https://github.com/nthnbch/hugo-white-paper-theme themes/hugo-white-paper-theme
+git clone https://github.com/nthnbch/hugo-fraktur-theme themes/hugo-fraktur-theme
 ```
 
 ### Method 3: Download
 
-Download the theme from GitHub and extract it to `themes/hugo-white-paper-theme`
+Download the theme from GitHub and extract it to `themes/hugo-fraktur-theme`
 
 ## Configuration
 
 Update your `config.toml`:
 
 ```toml
-theme = "hugo-white-paper-theme"
+theme = "hugo-fraktur-theme"
 title = "Your Site Name"
 
 # Disable pagination and taxonomies for clean simplicity
@@ -149,11 +149,10 @@ MIT License - See [LICENSE](LICENSE) file for details
 
 ## Credits
 
-Created by Nathan Buache  
-Initially inspired by [Hugo Winston Theme](https://github.com/zerostaticthemes/hugo-winston-theme)
+Created by Nathan Buache
 
 ## Support
 
-- [Documentation](https://github.com/nthnbch/hugo-white-paper-theme/wiki)
-- [Issues](https://github.com/nthnbch/hugo-white-paper-theme/issues)
-- [Discussions](https://github.com/nthnbch/hugo-white-paper-theme/discussions)
+- [Documentation](https://github.com/nthnbch/hugo-fraktur-theme/wiki)
+- [Issues](https://github.com/nthnbch/hugo-fraktur-theme/issues)
+- [Discussions](https://github.com/nthnbch/hugo-fraktur-theme/discussions)

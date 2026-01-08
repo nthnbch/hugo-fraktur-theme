@@ -66,7 +66,7 @@ code themes.txt
 
 Ajoutez cette ligne dans l'ordre lexicographique :
 ```
-github.com/nthnbch/hugo-white-paper-theme
+github.com/nthnbch/hugo-fraktur-theme
 ```
 
 ### 5. Commiter et Créer une Pull Request
@@ -76,7 +76,7 @@ github.com/nthnbch/hugo-white-paper-theme
 git add themes.txt
 
 # Commiter avec un message descriptif
-git commit -m "Add hugo-white-paper-theme"
+git commit -m "Add hugo-fraktur-theme"
 
 # Pusher vers votre fork
 git push origin main
@@ -88,7 +88,7 @@ git push origin main
 2. Cliquez sur "Pull requests" puis "New pull request"
 3. Assurez-vous que la base est `gohugoio/hugoThemesSiteBuilder:main` et que la comparaison est votre branche
 4. Cliquez sur "Create pull request"
-5. Titre : "Add hugo-white-paper-theme"
+5. Titre : "Add hugo-fraktur-theme"
 6. Description : Décrivez brièvement votre thème
 7. Créez la PR
 
@@ -126,7 +126,7 @@ Votre thème respecte déjà tous les critères :
 - ✅ **Documentation complète** : README.md détaillé
 - ✅ **Images correctes** : Screenshot et thumbnail au bon format
 - ✅ **Métadonnées complètes** : theme.toml et hugo.toml
-- ✅ **Pas de fork** : Thème original (inspiré de Winston mais différent)
+- ✅ **Thème original** : Code unique et original
 
 ## ⚠️ Points d'Attention
 
