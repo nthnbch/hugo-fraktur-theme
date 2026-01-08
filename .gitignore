@@ -21,3 +21,6 @@ yarn.lock
 
 # Netlify
 .netlify/
+
+# Image backups
+images/*-original.*

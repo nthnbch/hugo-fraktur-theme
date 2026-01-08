@@ -1,0 +1,5 @@
+# Hugo module configuration
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.55.0"
