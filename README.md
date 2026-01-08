@@ -2,7 +2,7 @@
 
 A clean, modern Hugo theme featuring mixed Fraktur/Inter typography. Built for readability, elegance, and performance with no pagination or taxonomy bloat.
 
-![Hugo Fraktur Theme](https://raw.githubusercontent.com/nthnbch/hugo-fraktur-theme/main/images/screenshot.png)
+![Hugo Fraktur Theme](https://raw.githubusercontent.com/nthnbch/hugo-white-paper-theme/main/images/screenshot.png)
 
 ## Features
 
@@ -25,14 +25,14 @@ Live demo: [nathan.swiss](https://nathan.swiss)
 
 ```bash
 cd your-hugo-site
-git submodule add https://github.com/nthnbch/hugo-fraktur-theme themes/hugo-fraktur-theme
+git submodule add https://github.com/nthnbch/hugo-white-paper-theme themes/hugo-fraktur-theme
 ```
 
 ### Method 2: Clone
 
 ```bash
 cd your-hugo-site
-git clone https://github.com/nthnbch/hugo-fraktur-theme themes/hugo-fraktur-theme
+git clone https://github.com/nthnbch/hugo-white-paper-theme themes/hugo-fraktur-theme
 ```
 
 ### Method 3: Download
@@ -51,55 +51,30 @@ title = "Your Site Name"
 disableKinds = ["taxonomy", "term"]
 
 [params]
-  # Mixed title fonts (e.g., "nathan" in Inter, ".swiss" in Fraktur)
-  titlePart1 = "nathan"        # Will use Inter
-  titlePart2 = ".swiss"        # Will use Fraktur
-  
-  # Google Analytics (optional)
-  google_analytics_id = "G-XXXXXXXXXX"
-  
   # Display options
   showIntroContentOnHomepage = true
   showPostsOnHomepage = false
   
-  # Colors (Material Design)
-  highlightColor = '#000000'
-  baseColor = "#fdfbff"
-  baseOffsetColor = "#f7f2fa"
-  headingColor = "#1c1b1f"
-  textColor = "#49454f"
-  
   # Fonts
   enableGoogleFonts = true 
   googleFontsUrl = "https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=UnifrakturCook:wght@700&display=swap"
-  fontFamilyHeading = "UnifrakturCook"
-  fontFamilyParagraph = "Inter"
-  fontFamilyMonospace = "Inter"
+  
+  # Analytics (optional)
+  google_analytics_id = "G-XXXXXXXXXX"
+  # plausible_analytics_domain = "yourdomain.com"
 ```
 
 ## Typography Features
 
-### Mixed Title Fonts
-The theme supports mixed fonts in the site title via CSS pseudo-elements:
-- First part uses Inter font
-- Second part uses Fraktur font
-- Configure via `titlePart1` and `titlePart2` parameters
-
-### Selective Fraktur Words
-Use the `.fraktur-word` class to apply Fraktur font to specific words:
-
-```markdown
-This word is **<span class="fraktur-word">Fraktur</span>** styled.
-```
-
-### Bold Post Titles
-Post titles in listings are automatically styled in bold for better hierarchy.
+- **Fraktur Headings**: H1 headings use UnifrakturCook font
+- **Inter Body Text**: H2, H3, and body text use Inter font for readability
+- **Bold Post Titles**: Post titles in listings are automatically styled in bold for better hierarchy
 
 ## Customization
 
 ### Colors
 
-The theme uses CSS custom properties for easy color customization:
+The theme uses CSS custom properties based on Material Design. To customize colors, create `assets/css/extended/custom.css` and override the variables:
 
 ```css
 :root {
@@ -108,20 +83,20 @@ The theme uses CSS custom properties for easy color customization:
   --surface: #fef7ff;
   --on-surface: #1d1b20;
   --on-surface-variant: #49454f;
+  /* Override other variables as needed */
 }
 ```
 
-Override these in `assets/css/extended/custom.css`
+### Fonts
 
-### Typography
+To use different fonts, update the `googleFontsUrl` parameter in your `config.toml` and override the font family variables in `assets/css/extended/custom.css`:
 
-Customize fonts in your `config.toml`:
-
-```toml
-[params]
-  fontFamilyHeading = "Your Heading Font"
-  fontFamilyParagraph = "Your Body Font"
-  fontFamilyMonospace = "Your Code Font"
+```css
+:root {
+  --font-family-heading: 'Your Heading Font', serif;
+  --font-family-paragraph: 'Your Body Font', sans-serif;
+  --font-family-monospace: 'Your Code Font', monospace;
+}
 ```
 
 ## Social Links
@@ -153,6 +128,6 @@ Created by Nathan Buache
 
 ## Support
 
-- [Documentation](https://github.com/nthnbch/hugo-fraktur-theme/wiki)
-- [Issues](https://github.com/nthnbch/hugo-fraktur-theme/issues)
-- [Discussions](https://github.com/nthnbch/hugo-fraktur-theme/discussions)
+- [Documentation](https://github.com/nthnbch/hugo-white-paper-theme/wiki)
+- [Issues](https://github.com/nthnbch/hugo-white-paper-theme/issues)
+- [Discussions](https://github.com/nthnbch/hugo-white-paper-theme/discussions)

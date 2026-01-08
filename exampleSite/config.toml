@@ -4,19 +4,17 @@ theme = "hugo-fraktur-theme"
 title = "Hugo Fraktur Theme"
 
 [params]
+  # Display options
   showIntroContentOnHomepage = true
   showPostsOnHomepage = true
-  highlightColor = '#000000'
-  baseColor = "#fdfbff"
-  baseOffsetColor = "#f7f2fa"
-  headingColor = "#1c1b1f"
-  textColor = "#49454f"
-  dotColor = "#000000"
+  
+  # Fonts
   enableGoogleFonts = true 
   googleFontsUrl = "https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=UnifrakturCook:wght@700&display=swap"
-  fontFamilyHeading = "UnifrakturCook"
-  fontFamilyParagraph = "Inter"
-  fontFamilyMonospace = "Inter"
+  
+  # Analytics (optional - uncomment to use)
+  # google_analytics_id = "G-XXXXXXXXXX"
+  # plausible_analytics_domain = "example.com"
 
 [menu]
   [[menu.main]]
