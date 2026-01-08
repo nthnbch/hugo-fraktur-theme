@@ -2,7 +2,7 @@
 
 A clean, modern Hugo theme featuring mixed Fraktur/Inter typography. Built for readability, elegance, and performance with no pagination or taxonomy bloat.
 
-![Hugo Fraktur Theme](https://raw.githubusercontent.com/nthnbch/hugo-fraktur-theme/main/images/screenshot.png)
+![Hugo Fraktur Theme](https://raw.githubusercontent.com/nthnbch/hugo-fraktur-theme/master/images/screenshot.png)
 
 ## Features
 
