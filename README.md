@@ -2,7 +2,7 @@
 
 A clean, modern Hugo theme featuring mixed Fraktur/Inter typography. Built for readability, elegance, and performance with no pagination or taxonomy bloat.
 
-![Hugo Fraktur Theme](https://raw.githubusercontent.com/nthnbch/hugo-white-paper-theme/main/images/screenshot.png)
+![Hugo Fraktur Theme](https://raw.githubusercontent.com/nthnbch/hugo-fraktur-theme/main/images/screenshot.png)
 
 ## Features
 
@@ -25,14 +25,14 @@ Live demo: [nathan.swiss](https://nathan.swiss)
 
 ```bash
 cd your-hugo-site
-git submodule add https://github.com/nthnbch/hugo-white-paper-theme themes/hugo-fraktur-theme
+git submodule add https://github.com/nthnbch/hugo-fraktur-theme themes/hugo-fraktur-theme
 ```
 
 ### Method 2: Clone
 
 ```bash
 cd your-hugo-site
-git clone https://github.com/nthnbch/hugo-white-paper-theme themes/hugo-fraktur-theme
+git clone https://github.com/nthnbch/hugo-fraktur-theme themes/hugo-fraktur-theme
 ```
 
 ### Method 3: Download
@@ -128,6 +128,6 @@ Created by Nathan Buache
 
 ## Support
 
-- [Documentation](https://github.com/nthnbch/hugo-white-paper-theme/wiki)
-- [Issues](https://github.com/nthnbch/hugo-white-paper-theme/issues)
-- [Discussions](https://github.com/nthnbch/hugo-white-paper-theme/discussions)
+- [Documentation](https://github.com/nthnbch/hugo-fraktur-theme/wiki)
+- [Issues](https://github.com/nthnbch/hugo-fraktur-theme/issues)
+- [Discussions](https://github.com/nthnbch/hugo-fraktur-theme/discussions)
