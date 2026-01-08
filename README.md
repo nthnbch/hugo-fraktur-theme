@@ -124,10 +124,4 @@ MIT License - See [LICENSE](LICENSE) file for details
 
 ## Credits
 
-Created by Nathan Buache
-
-## Support
-
-- [Documentation](https://github.com/nthnbch/hugo-fraktur-theme/wiki)
-- [Issues](https://github.com/nthnbch/hugo-fraktur-theme/issues)
-- [Discussions](https://github.com/nthnbch/hugo-fraktur-theme/discussions)
+Created by [Nathan Buache](https://nathan.swiss) - [GitHub](https://github.com/nthnbch)
