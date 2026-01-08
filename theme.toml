@@ -9,7 +9,7 @@ homepage = "https://github.com/nthnbch/hugo-fraktur-theme"
 # If you have a running demo of the theme.
 demosite = "https://nathan.swiss"
 
-tags = ["blog", "minimalist", "responsive", "clean", "material-design"]
+tags = ["blog", "minimalist", "responsive", "clean", "material-design", "fraktur"]
 features = ["blog", "material-design", "seo", "responsive", "minimalist", "typography", "accessible"]
 
 # If the theme has a single author
