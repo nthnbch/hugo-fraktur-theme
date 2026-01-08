@@ -4,17 +4,17 @@
     margin-bottom: 64px;
   }
   h1 {
-    font-size: 75px;
-    line-height: 1.2;
+    font-size: 150px;
+    line-height: 1.1;
     margin-top: 0;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
     color: var(--on-surface);
     font-weight: 400;
     @include breakpoint('small') {
       width: 100%;
-      font-size: 100px;
+      font-size: 150px;
       line-height: 1.1;
-      margin-bottom: 32px;
+      margin-bottom: 40px;
     }
     strong {
       color: var(--primary);
