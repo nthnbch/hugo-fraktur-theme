@@ -32,3 +32,8 @@ title = "Hugo Fraktur Theme"
     identifier = "about"
     weight = 3
     url = "/about/"
+  [[menu.main]]
+    name = "Contact"
+    identifier = "contact"
+    weight = 4
+    url = "/pages/contact/"
