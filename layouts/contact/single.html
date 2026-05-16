@@ -1,0 +1,22 @@
+{{ define "main" }}
+<div class="contact-page">
+  <h1 class="contact-title">{{ .Title }}</h1>
+
+  {{ if .Content }}
+  <div class="contact-intro">{{ .Content }}</div>
+  {{ end }}
+
+  {{ if .Site.Data.social.links }}
+  <div class="contact-social">
+    {{ range .Site.Data.social.links }}
+    <a class="contact-social-item" href="{{ .url }}" target="_blank" rel="noopener">
+      <span class="contact-social-name">{{ .name }}</span>
+      {{ if .description }}
+      <span class="contact-social-desc">{{ .description }}</span>
+      {{ end }}
+    </a>
+    {{ end }}
+  </div>
+  {{ end }}
+</div>
+{{ end }}

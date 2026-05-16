@@ -1,0 +1,71 @@
+.contact-page {
+  .contact-title {
+    font-size: 48px;
+    font-family: var(--font-family-heading);
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 24px;
+    color: var(--on-surface);
+    @include breakpoint('small') {
+      font-size: 56px;
+    }
+  }
+
+  .contact-intro {
+    margin-bottom: 40px;
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--on-surface-variant);
+      @include breakpoint('small') {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .contact-social {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+  }
+
+  .contact-social-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 20px 24px;
+    border: 1px solid var(--outline-variant);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    background: var(--surface-container-low);
+    transition: background 0.2s ease, border-color 0.2s ease;
+
+    &:hover {
+      background: var(--surface-container);
+      border-color: var(--outline);
+      text-decoration: none;
+    }
+
+    @include breakpoint('small') {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+  }
+
+  .contact-social-name {
+    font-family: var(--font-family-heading);
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--on-surface);
+    flex-shrink: 0;
+  }
+
+  .contact-social-desc {
+    font-size: 14px;
+    color: var(--on-surface-variant);
+    line-height: 1.4;
+  }
+}
