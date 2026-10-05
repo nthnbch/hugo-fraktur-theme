@@ -1,107 +1,124 @@
 # Hugo Fraktur Theme
 
-A clean, modern Hugo theme featuring mixed Fraktur/Inter typography. Built for readability, elegance, and performance with no pagination or taxonomy bloat.
+A clean, ultra-minimalist Hugo theme featuring distinctive Fraktur headings combined with modern Inter typography. Strictly Black & White, zero external dependencies, self-hosted variable fonts, native dark/light mode with toggle, and frictionless typography.
 
 ![Hugo Fraktur Theme](https://raw.githubusercontent.com/nthnbch/hugo-fraktur-theme/master/images/screenshot.png)
 
-## Features
+## Highlights & Features (v1.2)
 
-- **Mixed Typography**: UnifrakturCook Fraktur combined with Inter for selective emphasis
-- **No Pagination**: Clean, simple post listings without pagination complexity
-- **No Taxonomies**: Streamlined without tags/categories overhead  
-- **Minimalist Layout**: Pure focus on content
-- **Responsive Design**: Optimized for all screen sizes
-- **Fast Loading**: Lightweight and optimized assets
-- **SEO Optimized**: Comprehensive meta tags, Schema.org markup, and Open Graph
-- **Accessible**: WCAG compliant color contrasts and navigation
+- **Strictly Black & White**: Pure monochrome palette with semantic CSS variables (`--bg`, `--text`, `--border`, `--code-bg`, `--link`).
+- **Dark & Light Modes**: 
+  - Automatically respects user's OS preference (`prefers-color-scheme`).
+  - Interactive header toggle with persistent `localStorage` storage and 0 FOUC (no flash of wrong theme).
+- **100% Self-Hosted Fonts**:
+  - **UnifrakturCook** for headings, brand logo, and title elements.
+  - **Inter Variable** (`InterVariable.woff2`, `InterVariable-Italic.woff2`) for crisp, readable body text.
+  - Zero external calls (no Google Fonts tracking, GDPR/FADP compliant, works fully offline).
+- **Frictionless Link Hover**: Subtle animated text underline offset on hover for an ultra-clean feel.
+- **Configurable Footer**: Customizable theme attribution (`themeName`, `themeRepo`) and optional build metadata.
+- **No Pagination / No Taxonomies Bloat**: Designed for focused, long-form reading and clear chronological lists.
+- **SEO & Structured Data**: Built-in Open Graph, Twitter Cards, Schema.org Person metadata, and semantic HTML5.
+- **Performance & Privacy**: Zero tracking, minimal CSS/JS footprint (<15 KB total assets).
 
 ## Demo
 
-Live demo: [nathan.swiss](https://nathan.swiss)
+- Live demo: [nathan.swiss](https://nathan.swiss)
+
+---
 
 ## Installation
 
 ### Method 1: Git Submodule (Recommended)
 
+From your Hugo site root:
+
 ```bash
-cd your-hugo-site
 git submodule add https://github.com/nthnbch/hugo-fraktur-theme themes/hugo-fraktur-theme
 ```
 
-### Method 2: Clone
+### Method 2: Hugo Module
 
 ```bash
-cd your-hugo-site
+hugo mod init my-site
+```
+
+Add the theme to your configuration:
+
+```toml
+theme = ["github.com/nthnbch/hugo-fraktur-theme"]
+```
+
+### Method 3: Clone
+
+```bash
 git clone https://github.com/nthnbch/hugo-fraktur-theme themes/hugo-fraktur-theme
 ```
 
-### Method 3: Download
-
-Download the theme from GitHub and extract it to `themes/hugo-fraktur-theme`
+---
 
 ## Configuration
 
-Update your `config.toml`:
+Add the theme settings to your `config.toml` (or `hugo.toml`):
 
 ```toml
+baseURL = "https://example.com/"
+languageCode = "en"
+title = "My Fraktur Blog"
 theme = "hugo-fraktur-theme"
-title = "Your Site Name"
 
-# Disable pagination and taxonomies for clean simplicity
+# Disable taxonomies for minimalist simplicity
 disableKinds = ["taxonomy", "term"]
 
 [params]
-  # Display options
+  # Homepage display options
   showIntroContentOnHomepage = true
-  showPostsOnHomepage = false
+  showPostsOnHomepage = true
+
+  # Theme toggle button in header (default: true)
+  enableThemeToggle = true
+
+  # Frame border around the site (optional)
+  addFrame = false
+
+  # Configurable footer theme attribution
+  themeName = "Fraktur"
+  themeRepo = "https://github.com/nthnbch/hugo-fraktur-theme"
   
-  # Fonts
-  enableGoogleFonts = true 
-  googleFontsUrl = "https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=UnifrakturCook:wght@700&display=swap"
-  
+  # Optional build info in footer (e.g. "100/100 Lighthouse")
+  # buildTime = "100/100 Lighthouse"
+
   # Analytics (optional)
-  google_analytics_id = "G-XXXXXXXXXX"
-  # plausible_analytics_domain = "yourdomain.com"
+  # google_analytics_id = "G-XXXXXXXXXX"
+  # plausible_analytics_domain = "example.com"
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "posts"
+    name = "Blog"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 3
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/pages/contact/"
+    weight = 4
 ```
 
-## Typography Features
-
-- **Fraktur Headings**: H1 headings use UnifrakturCook font
-- **Inter Body Text**: H2, H3, and body text use Inter font for readability
-- **Bold Post Titles**: Post titles in listings are automatically styled in bold for better hierarchy
-
-## Customization
-
-### Colors
-
-The theme uses CSS custom properties based on Material Design. To customize colors, create `assets/css/extended/custom.css` and override the variables:
-
-```css
-:root {
-  --primary: #000000;
-  --on-primary: #ffffff;
-  --surface: #fef7ff;
-  --on-surface: #1d1b20;
-  --on-surface-variant: #49454f;
-  /* Override other variables as needed */
-}
-```
-
-### Fonts
-
-To use different fonts, update the `googleFontsUrl` parameter in your `config.toml` and override the font family variables in `assets/css/extended/custom.css`:
-
-```css
-:root {
-  --font-family-heading: 'Your Heading Font', serif;
-  --font-family-paragraph: 'Your Body Font', sans-serif;
-  --font-family-monospace: 'Your Code Font', monospace;
-}
-```
+---
 
 ## Social Links
 
-Add social links in `data/social.json`:
+Define your social links in `data/social.json`:
 
 ```json
 {
@@ -113,15 +130,61 @@ Add social links in `data/social.json`:
     {
       "name": "LinkedIn",
       "url": "https://linkedin.com/in/yourusername"
+    },
+    {
+      "name": "X / Twitter",
+      "url": "https://x.com/yourusername"
     }
   ]
 }
 ```
 
+---
+
+## Customization & Overrides
+
+### CSS Variables
+
+To tweak colors or spacing, create `assets/css/extended/custom.css` in your site:
+
+```css
+:root,
+[data-theme="light"] {
+  --bg: #ffffff;
+  --text: #111111;
+  --text-muted: #555555;
+  --border: #d4d4d4;
+  --code-bg: #f5f5f5;
+  --link: #111111;
+}
+
+[data-theme="dark"] {
+  --bg: #0f0f0f;
+  --text: #eeeeee;
+  --text-muted: #999999;
+  --border: #333333;
+  --code-bg: #1a1a1a;
+  --link: #eeeeee;
+}
+```
+
+---
+
+## Example Site
+
+An `exampleSite` directory is included in the repository. You can preview it locally:
+
+```bash
+cd exampleSite
+hugo server --themesDir=../.. --theme=hugo-fraktur-theme
+```
+
+---
+
 ## License
 
-MIT License - See [LICENSE](LICENSE) file for details
+MIT License — see [LICENSE](LICENSE) for details.
 
-## Credits
+## Author
 
-Created by [Nathan Buache](https://nathan.swiss) - [GitHub](https://github.com/nthnbch)
+Created with care by [Nathan Buache](https://nathan.swiss) ([@nthnbch](https://github.com/nthnbch)).

@@ -1,10 +1,8 @@
-------
-
-title: 'my side projects.'
+---
+title: 'My Side Projects'
 date: 2024-01-01
 draft: false
-description: "lorem ipsum"---
-
+description: "Showcase of side projects and experiments"
 ---
 
 This is an example projects page. You can customize this content to showcase your side projects.

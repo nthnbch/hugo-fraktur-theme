@@ -6,9 +6,9 @@
   <div class="contact-intro">{{ .Content }}</div>
   {{ end }}
 
-  {{ if .Site.Data.social.links }}
+  {{ if hugo.Data.social.links }}
   <div class="contact-social">
-    {{ range .Site.Data.social.links }}
+    {{ range hugo.Data.social.links }}
     <a class="contact-social-item" href="{{ .url }}" target="_blank" rel="noopener">
       <span class="contact-social-name">{{ .name }}</span>
       {{ if .description }}

@@ -1,19 +1,15 @@
 name = "Hugo Fraktur"
 license = "MIT"
 licenselink = "https://github.com/nthnbch/hugo-fraktur-theme/blob/master/LICENSE"
-description = "A clean, ultra-minimalist Hugo theme with Fraktur/Inter typography. Strictly Black & White, zero JS overhead, self-hosted fonts, and native dark/light mode via prefers-color-scheme."
-version = "1.2.0"
-
-# The home page of the theme, where the source can be found.
+description = "A clean, ultra-minimalist Hugo theme with Fraktur/Inter typography. Strictly Black & White, zero external dependencies, self-hosted fonts, and instant dark/light mode toggle."
 homepage = "https://github.com/nthnbch/hugo-fraktur-theme"
-
-# If you have a running demo of the theme.
 demosite = "https://nathan.swiss"
+min_version = "0.120.0"
 
-tags = ["blog", "minimalist", "responsive", "clean", "material-design", "fraktur"]
-features = ["blog", "material-design", "seo", "responsive", "minimalist", "typography", "accessible"]
+tags = ["blog", "minimalist", "responsive", "clean", "fraktur", "typography", "dark-mode"]
+features = ["blog", "seo", "responsive", "minimalist", "typography", "accessible", "dark-mode", "light-mode"]
 
-# If the theme has a single author
 [author]
     name = "Nathan Buache"
     homepage = "https://nathan.swiss"
+
