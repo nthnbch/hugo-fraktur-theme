@@ -7,11 +7,19 @@ title = "Hugo Fraktur Theme"
   # Display options
   showIntroContentOnHomepage = true
   showPostsOnHomepage = true
-  
-  # Fonts
-  enableGoogleFonts = true 
-  googleFontsUrl = "https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=UnifrakturCook:wght@700&display=swap"
-  
+
+  # --- v1.2: Fonts are now self-hosted (assets/fonts/).
+  # Google Fonts no longer required. Remove the params below if migrating.
+  # enableGoogleFonts = false
+
+  # --- v1.2: Footer theme attribution (configurable)
+  # Displayed as: "Built with Hugo · Theme: <themeName>"
+  themeName = "Fraktur"
+  themeRepo = "https://github.com/nthnbch/hugo-fraktur-theme"
+
+  # Optional: display a custom build time string in the footer
+  # buildTime = "100/100 Lighthouse"
+
   # Analytics (optional - uncomment to use)
   # google_analytics_id = "G-XXXXXXXXXX"
   # plausible_analytics_domain = "example.com"

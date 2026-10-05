@@ -10,4 +10,13 @@
     {{ end }}
   </div>
   {{ end }}
+
+  <div class="footer-meta">
+    Built with <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>
+    &bull;
+    Theme:&nbsp;<a href="{{ .Site.Params.themeRepo | default "https://github.com/nthnbch/hugo-fraktur-theme" }}" target="_blank" rel="noopener">{{ .Site.Params.themeName | default "Fraktur" }}</a>
+    {{- with .Site.Params.buildTime }}
+    &bull; {{ . }}
+    {{- end }}
+  </div>
 </div>

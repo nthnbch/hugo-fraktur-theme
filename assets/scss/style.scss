@@ -1,94 +1,86 @@
+// ============================================================
+// Fraktur Theme — v1.2
+// Strictly Black & White · prefers-color-scheme aware
+// 0kb JS · Self-hosted fonts · Ultra-minimalist
+// ============================================================
+
+// ── Light mode (default) ────────────────────────────────────
 :root {
-  --primary: #000000;
-  --on-primary: #ffffff;
-  --primary-container: #eaddff;
-  --on-primary-container: #21005d;
+  --bg:                    #ffffff;
+  --text:                  #111111;
+  --text-muted:            #555555;
+  --border:                #d4d4d4;
+  --code-bg:               #f5f5f5;
+  --link:                  #111111;
+  --link-decoration-color: #111111;
 
-  --secondary: #625b71;
-  --on-secondary: #ffffff;
-  --secondary-container: #e8def8;
-  --on-secondary-container: #1d192b;
+  // Legacy aliases (keep compatibility with component partials)
+  --primary:               #000000;
+  --on-primary:            #ffffff;
+  --surface:               #ffffff;
+  --on-surface:            #111111;
+  --on-surface-variant:    #555555;
+  --outline:               #cccccc;
+  --outline-variant:       #e0e0e0;
+  --surface-container:     #f5f5f5;
+  --surface-container-low: #fafafa;
+  --highlight-color:       #000000;
+  --base-color:            #ffffff;
 
-  --tertiary: #7d5260;
-  --on-tertiary: #ffffff;
-  --tertiary-container: #ffd8e4;
-  --on-tertiary-container: #31111d;
+  // Typography
+  --font-family-heading:   'UnifrakturCook', serif;
+  --font-family-paragraph: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-family-monospace: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
-  --error: #ba1a1a;
-  --on-error: #ffffff;
-  --error-container: #ffdad6;
-  --on-error-container: #410002;
-
-  --surface: #fef7ff;
-  --on-surface: #1d1b20;
-  --on-surface-variant: #49454f;
-
-  --surface-container-lowest: #ffffff;
-  --surface-container-low: #f7f2fa;
-  --surface-container: #f3edf7;
-  --surface-container-high: #ece6f0;
-  --surface-container-highest: #e6e0e9;
-
-  --outline: #79747e;
-  --outline-variant: #cac4d0;
-
-  --font-family-heading: 'UnifrakturCook', serif;
-  --font-family-paragraph: 'Inter', sans-serif;
-  --font-family-monospace: 'Inter', monospace;
-
-  --shadow-key-penumbra-opacity: 0.2;
-  --shadow-key-umbra-opacity: 0.14;
-  --shadow-ambient-shadow-opacity: 0.12;
-
-  --border-radius: 12px;
-  --border-radius-large: 16px;
-  --border-radius-small: 8px;
-
-  /* Mobile menu compatibility variables */
-  --highlight-color: var(--primary);
-  --base-color: var(--on-primary);
+  // Spacing / radius
+  --border-radius:         8px;
+  --border-radius-large:   12px;
+  --border-radius-small:   4px;
 }
 
-.elevation-0 {
-  box-shadow: none;
+// ── Dark mode ───────────────────────────────────────────────
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:                    #0f0f0f;
+    --text:                  #eeeeee;
+    --text-muted:            #999999;
+    --border:                #333333;
+    --code-bg:               #1a1a1a;
+    --link:                  #eeeeee;
+    --link-decoration-color: #eeeeee;
+
+    // Legacy aliases
+    --primary:               #ffffff;
+    --on-primary:            #000000;
+    --surface:               #0f0f0f;
+    --on-surface:            #eeeeee;
+    --on-surface-variant:    #999999;
+    --outline:               #444444;
+    --outline-variant:       #2a2a2a;
+    --surface-container:     #1a1a1a;
+    --surface-container-low: #141414;
+    --highlight-color:       #ffffff;
+    --base-color:            #000000;
+  }
 }
 
-.elevation-1 {
-  box-shadow:
-    0px 1px 2px 0px rgba(0, 0, 0, var(--shadow-key-umbra-opacity)),
-    0px 1px 3px 1px rgba(0, 0, 0, var(--shadow-key-penumbra-opacity));
-}
+// ── Elevation (neutral shadows only) ────────────────────────
+.elevation-0 { box-shadow: none; }
+.elevation-1 { box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08); }
+.elevation-2 { box-shadow: 0 2px 6px rgba(0, 0, 0, 0.14), 0 1px 4px rgba(0, 0, 0, 0.10); }
+.elevation-3 { box-shadow: 0 4px 8px rgba(0, 0, 0, 0.14), 0 2px 6px rgba(0, 0, 0, 0.10); }
+.elevation-4 { box-shadow: 0 6px 12px rgba(0, 0, 0, 0.14), 0 3px 8px rgba(0, 0, 0, 0.10); }
+.elevation-5 { box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16), 0 4px 10px rgba(0, 0, 0, 0.12); }
 
-.elevation-2 {
-  box-shadow:
-    0px 1px 2px 0px rgba(0, 0, 0, var(--shadow-key-umbra-opacity)),
-    0px 2px 6px 2px rgba(0, 0, 0, var(--shadow-key-penumbra-opacity));
-}
-
-.elevation-3 {
-  box-shadow:
-    0px 1px 3px 0px rgba(0, 0, 0, var(--shadow-key-umbra-opacity)),
-    0px 4px 8px 3px rgba(0, 0, 0, var(--shadow-key-penumbra-opacity));
-}
-
-.elevation-4 {
-  box-shadow:
-    0px 2px 3px 0px rgba(0, 0, 0, var(--shadow-key-umbra-opacity)),
-    0px 6px 10px 4px rgba(0, 0, 0, var(--shadow-key-penumbra-opacity));
-}
-
-.elevation-5 {
-  box-shadow:
-    0px 4px 4px 0px rgba(0, 0, 0, var(--shadow-key-umbra-opacity)),
-    0px 8px 12px 6px rgba(0, 0, 0, var(--shadow-key-penumbra-opacity));
-}
-
+// ── Breakpoints map ─────────────────────────────────────────
 $breakpoints: (
-  'small': 767px,
+  'small':  767px,
   'medium': 992px,
-  'large': 1200px,
+  'large':  1200px,
 );
 
+// ── Partials ─────────────────────────────────────────────────
+@import 'fonts';
 @import 'normalize';
 @import 'breakpoints';
 @import 'header';
@@ -101,25 +93,32 @@ $breakpoints: (
 @import 'contact';
 @import 'pygments/github';
 
-html, body {
+// ── Base ─────────────────────────────────────────────────────
+html,
+body {
   box-sizing: border-box;
 }
 
 body {
-  background: var(--surface);
+  background-color: var(--bg);
   font-family: var(--font-family-paragraph);
-  color: var(--on-surface);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: var(--text);
   margin: 0;
   padding: 16px;
   overflow-x: hidden;
-  line-height: 1.5;
+  line-height: 1.6;
   transition: background-color 0.3s ease, color 0.3s ease;
+
   @include breakpoint('small') {
     padding: 24px;
   }
+
   &.frame {
     min-height: 100vh;
-    border: 18px solid var(--primary);
+    border: 18px solid var(--text);
   }
 }
 

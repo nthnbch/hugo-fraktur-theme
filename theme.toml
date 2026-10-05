@@ -1,8 +1,8 @@
 name = "Hugo Fraktur"
 license = "MIT"
 licenselink = "https://github.com/nthnbch/hugo-fraktur-theme/blob/master/LICENSE"
-description = "A clean, modern Hugo theme featuring mixed Fraktur/Inter typography. Built for readability, elegance, and performance with no pagination or taxonomy bloat."
-version = "1.0.1"
+description = "A clean, ultra-minimalist Hugo theme with Fraktur/Inter typography. Strictly Black & White, zero JS overhead, self-hosted fonts, and native dark/light mode via prefers-color-scheme."
+version = "1.2.0"
 
 # The home page of the theme, where the source can be found.
 homepage = "https://github.com/nthnbch/hugo-fraktur-theme"
