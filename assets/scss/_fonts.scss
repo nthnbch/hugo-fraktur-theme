@@ -1,7 +1,16 @@
 // ============================================================
-// Inter Variable Font — self-hosted (privacy + performance)
-// Source: https://rsms.me/inter/ — v4.0
+// Fonts — self-hosted (privacy + performance + 0 external deps)
+// - UnifrakturCook (headings, title, branding)
+// - Inter Variable (body, UI, paragraphs)
 // ============================================================
+
+@font-face {
+  font-family: 'UnifrakturCook';
+  src: url('/fonts/UnifrakturCook.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 @font-face {
   font-family: 'Inter';
@@ -18,3 +27,4 @@
   font-style: italic;
   font-display: swap;
 }
+
