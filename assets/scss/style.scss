@@ -4,8 +4,9 @@
 // 0kb JS · Self-hosted fonts · Ultra-minimalist
 // ============================================================
 
-// ── Light mode (default) ────────────────────────────────────
-:root {
+// ── Light mode (default & explicit data-theme="light") ───────
+:root,
+[data-theme="light"] {
   --bg:                    #ffffff;
   --text:                  #111111;
   --text-muted:            #555555;
@@ -38,9 +39,33 @@
   --border-radius-small:   4px;
 }
 
-// ── Dark mode ───────────────────────────────────────────────
+// ── Dark mode (explicit data-theme="dark") ───────────────────
+[data-theme="dark"] {
+  --bg:                    #0f0f0f;
+  --text:                  #eeeeee;
+  --text-muted:            #999999;
+  --border:                #333333;
+  --code-bg:               #1a1a1a;
+  --link:                  #eeeeee;
+  --link-decoration-color: #eeeeee;
+
+  // Legacy aliases
+  --primary:               #ffffff;
+  --on-primary:            #000000;
+  --surface:               #0f0f0f;
+  --on-surface:            #eeeeee;
+  --on-surface-variant:    #999999;
+  --outline:               #444444;
+  --outline-variant:       #2a2a2a;
+  --surface-container:     #1a1a1a;
+  --surface-container-low: #141414;
+  --highlight-color:       #ffffff;
+  --base-color:            #000000;
+}
+
+// ── System Dark mode (fallback if no manual choice) ──────────
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg:                    #0f0f0f;
     --text:                  #eeeeee;
     --text-muted:            #999999;

@@ -10,3 +10,16 @@ if (menuTrigger !== null) {
     body.classList.toggle('lock-scroll');
   });
 }
+
+// ── Theme switcher (Light / Dark) ───────────────────────────
+var themeToggle = document.querySelector('#theme-toggle');
+if (themeToggle !== null) {
+  themeToggle.addEventListener('click', function() {
+    var currentTheme = document.documentElement.getAttribute('data-theme');
+    var isDark = currentTheme === 'dark' || (!currentTheme && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    var targetTheme = isDark ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', targetTheme);
+    localStorage.setItem('theme', targetTheme);
+  });
+}
+
